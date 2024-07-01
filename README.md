@@ -37,12 +37,18 @@ To execute the tests, use the following Maven command:
 mvn clean test
 ```
 
+### Running Tests Using Eclipse
+You can also run the tests directly in Eclipse by right-clicking on the `cucumber.feature` file, selecting `Run As`, and then `Cucumber Feature`.
+
+![eclipse](https://github.com/brunonf15/betclick/assets/5133283/3e0b1cc5-59ea-4477-a3a5-3cad1567725b)
+
 ## Viewing Reports
 ### Cucumber HTML Report
 After running the tests, the Cucumber HTML report can be accessed at:
 ```bash
 target/cucumber/report.html
 ```
+![cucumberreport](https://github.com/brunonf15/betclick/assets/5133283/71b00c3f-e680-44ef-872f-d6dfca901f26)
 
 ### Allure Report
 To generate and view the Allure report:
@@ -51,6 +57,10 @@ To generate and view the Allure report:
 allure serve target/surefire-reports
 ```
 This command will start a local server and open the Allure report in your default web browser.
+
+![allure1](https://github.com/brunonf15/betclick/assets/5133283/8c93e00e-004b-4668-ae52-230aec32f7df)
+![allure2](https://github.com/brunonf15/betclick/assets/5133283/6ca3b213-925b-48ba-9e03-e5ac7195ea31)
+
 
 ## Detailed Project Components
 - `ConfigureBrowsers.java`: This class configures and manages WebDriver instances for different browsers.
