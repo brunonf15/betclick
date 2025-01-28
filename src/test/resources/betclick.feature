@@ -10,7 +10,7 @@ Feature: Sport tab navigation
 
     Examples: 
       | browser | Sport    | Element       |
-      | chrome  | Futebol  | Toda a oferta |
+      | firefox  | Futebol  | Toda a oferta |
 
   Scenario Outline: Select a sport and verify league URL
     Given I am using Selenium on "<browser>"
@@ -21,7 +21,7 @@ Feature: Sport tab navigation
 
     Examples: 
       | browser | Sport    |
-      | chrome  | Futebol  |
+      | firefox  | Futebol  |
 
   Scenario Outline: Access challenges and verify login page redirection
     Given I am using Selenium on "<browser>"
@@ -32,4 +32,4 @@ Feature: Sport tab navigation
 
     Examples: 
       | browser |
-      | chrome  |
+      | firefox  |
